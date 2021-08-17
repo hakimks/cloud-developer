@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node .",
     "tsc": "tsc",
-    "dev": "ts-node-dev ./src/server.ts",
+    "dev": "ts-node-dev --debug ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
     "clean": "rimraf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
@@ -20,6 +20,7 @@
     "@types/jsonwebtoken": "^8.3.2",
     "aws-sdk": "^2.492.0",
     "bcrypt": "^5.0.0",
+    "node": "^11.0.0",
     "body-parser": "^1.19.0",
     "email-validator": "^2.0.4",
     "express": "^4.17.1",
