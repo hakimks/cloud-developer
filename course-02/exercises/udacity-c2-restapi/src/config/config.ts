@@ -17,7 +17,7 @@ export const config = {
     "dialect": "postgres"
   },
   "jwt": {
-    "secret": "helloworld"
+    "secret": process.env.JWT_SECRET
   }
 }
 
@@ -38,5 +38,8 @@ export const config = {
 //     "database": "udagram_prod",
 //     "host": "",
 //     "dialect": "postgres"
-//   }
+//   },
+  // "jwt": {
+  //   "secret": "helloworld"
+  // }
 // }
